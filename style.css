@@ -1,0 +1,272 @@
+/*
+ Theme Name:   Twenty Thirteen Child
+ Theme URI:    http://example.com/twenty-thirteen-child/
+ Description:  Twenty Thirteen Child Theme
+ Author:       Johannes Charra
+ Author URI:   http://charra.de
+ Template:     twentythirteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-thirteen-child
+*/
+
+h1 {
+	font-size: 32px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h2.site-description {
+	float: right;
+	font-size: 17px;
+	font-style: normal;
+	font-family: Source Sans Pro;
+	position: absolute;
+	top: 200px;
+	right: 330px;
+}
+
+/* border around main navigation */
+.navbar {
+	border: 1px solid #aaa;
+}
+
+.navbar ul.sub-menu {
+	border: 1px solid #aaa;
+}
+
+/* make sidebar widget fully transparent */
+.sidebar-inner .widget {
+	background-color: rgba(1,1,1,0);
+}
+
+div.site-content {
+	background: #d6f0fd;
+	background: -moz-linear-gradient(top,#78AFD8 0%,#fff 120px);
+/* FF3.6+ */
+	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#78AFD8),color-stop(120px,#fff));
+/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,#78AFD8 0%,#fff 120px);
+/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,#78AFD8 0%,#fff 120px);
+/* Opera 11.10+ */
+	background: -ms-linear-gradient(top,#78AFD8 0%,#fff 120px);
+/* IE10+ */
+	background: linear-gradient(to bottom,#78AFD8 0%,#fff 120px);
+}
+
+/* Vertically centered text in footer */
+div.site-info p {
+	margin: 0;
+	text-align: center;
+}
+
+/* widget styles */
+.site-footer .widget {
+	width: 50%;
+}
+
+.sidebar .site-footer .widget {
+	width: 50%;
+}
+
+.sidebar-inner .widget .widget-title {
+	font: normal 300 20px "Petit Formal Script", "Source Sans Pro", Helvetica, sans-serif;
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+@media(max-width: 767px) {
+	h2.site-description {
+		top: 0;
+	}
+}
+
+/* Blog image styles */
+
+article.post {
+	overflow: visible;
+}
+
+article.post img {
+	border-radius: 5px;
+
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+article.post img:hover {
+	border-radius: 5px;
+
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+       -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* Navigation */
+.nav-menu li:hover {
+	background-color: #FAF8EA;
+}
+
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a,
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a {
+	font-style: normal;
+}
+
+.nav-menu .current_page_item > a:hover,
+.nav-menu .current_page_ancestor > a:hover,
+.nav-menu .current-menu-item > a:hover,
+.nav-menu .current-menu-ancestor > a:hover {
+	font-style: normal;
+	background: #E8E5CE;
+	color: #BC3508;
+}
+
+ul.nav-menu ul a:hover,
+.nav-menu ul ul a:hover,
+ul.nav-menu ul a:focus,
+.nav-menu ul ul a:focus {
+	font-style: normal;
+	background: #E8E5CE;
+}
+
+ul.nav-menu ul a,
+.nav-menu ul ul a {
+	font-style: normal;
+	background: #F7F5E7;
+	color: black;
+}
+
+.nav-menu li:hover > a,
+.nav-menu li a:hover,
+.nav-menu li:focus > a,
+.nav-menu li a:focus {
+	font-style: normal;
+	background: #E8E5CE;
+	color: black;
+}
+
+table.centeredTable {
+	border: 1px solid;
+}
+
+table.centeredTable td {
+	text-align: center;
+	border: 1px solid;
+	padding: 3px;
+	hyphens: none;
+}
+
+/* End Navigation */
+
+/* Staff styles */
+.section_annotation {
+	-moz-transform: rotate(270deg);
+	-moz-transform-origin: 50% 50%;
+	-webkit-transform: rotate(270deg);
+	-webkit-transform-origin: 50% 50%;
+	float: left;
+}
+
+div.staff img {
+	width: 150px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+div.staff h3 {
+	color: #444;
+	padding-top: 20px;
+}
+
+div.staff h5 {
+	width: 100%;
+	background: #F7F5E7;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+div.staff .odd h5 {
+	text-align: right;
+	padding-right: 30px;
+}
+
+div.staff .even h5 {
+	text-align: left;
+	padding-left: 30px;
+}
+
+div.staff div.withImage {
+	min-height: 250px;
+}
+
+div.staff .even img {
+	border: 1px solid #aaa;
+	margin-right: 30px;
+	float: left;
+}
+
+div.staff .odd img {
+	border: 1px solid #aaa;
+	margin-left: 30px;
+	float: right;
+}
+
+/* End staff styles */
+
+/**
+ * Styles making the fille and garcon on top of the page appear
+ */
+
+
+@media(max-width: 767px) {
+	div.fillegarcon {
+		display: none;
+	}
+}
+
+div.fillegarcon {
+	position: absolute;
+	top: 116px;
+	left: 38%;
+}
+
+a.garcon {
+	float: left;
+	width: 80px;
+	height: 130px;
+	background: url("images/fillegarconsprite.png") -155px 0;
+}
+
+a.garcon:hover {
+	cursor: pointer;
+	width: 80px;
+	height: 130px;
+	background: url("images/fillegarconsprite.png") 0 0;
+}
+
+a.fille {
+	float: right;
+	width: 74px;
+	height: 130px;
+	background: url("images/fillegarconsprite.png") -235px 0;
+}
+
+a.fille:hover {
+	cursor: pointer;
+	width: 74px;
+	height: 130px;
+	background: url("images/fillegarconsprite.png") -79px 1px;
+}
+
+/* End fillegarcon styles */
